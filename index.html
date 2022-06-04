@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>A Design System Template</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="navigation container">
+        <h1 class="logo">
+          <img src="assets/pupy-logo.svg" />
+        </h1>
+        <nav>
+          <a href="#typography">Typography</a>
+          <a href="#colors">Colors</a>
+          <a href="#buttons">Buttons</a>
+          <a href="#cards">Cards</a>
+          <a href="#layout">Layout</a>
+        </nav>
+      </div>
+    </header>
+    <main class="layout">
+      <section class="container visual-type-scale">
+        <h1 id="typography" data-aos="fade-up" data-aos-duration="1000">A Visual Type Scale</h1>
+        <p data-aos="fade-up" data-aos-duration="1000">
+          Lorem ipsum dolor sit amet <a href="#">consectetur</a>, adipisicing
+          elit. Odit autem eum vel sunt dolores est optio! Praesentium fugit aut
+          quod facilis laboriosam dicta ipsa, eaque, repellendus natus iure
+          dignissimos modi. Lorem ipsum dolor sit amet consectetur, adipisicing
+          elit. Odit autem eum vel sunt dolores est optio! Praesentium fugit aut
+          quod facilis laboriosam dicta ipsa, eaque, repellendus natus iure
+          dignissimos modi.
+        </p>
+        <h2 data-aos-duration="1000" data-aos="fade-down">A Visual Type Scale</h2>
+        <h3 data-aos-duration="1000" data-aos="fade-up">A Visual Type Scale</h3>
+        <h4 data-aos-duration="1000" data-aos="fade-down">A Visual Type Scale</h4>
+        <h5 data-aos-duration="1000" data-aos="fade-up">A Visual Type Scale</h5>
+        <small>A Visual Type Scale</small>
+      </section>
+      <section class="container colors">
+        <h2 id="colors">Colors</h2>
+
+        <div data-aos="fade-right">
+          <h3>General</h3>
+          <div class="color-grid">
+            <div class="color" style="background: var(--black)"></div>
+            <div
+              class="color"
+              style="background: var(--white); border: var(--line)"
+            ></div>
+          </div>
+        </div>
+
+        <div data-aos="fade-right" data-aos-duration="1000">
+          <h3>Orange</h3>
+          <div class="color-grid">
+            <div class="color" style="background: var(--orange-900)"></div>
+            <div class="color" style="background: var(--orange-800)"></div>
+            <div class="color" style="background: var(--orange-700)"></div>
+            <div class="color" style="background: var(--orange-600)"></div>
+            <div class="color" style="background: var(--orange-500)"></div>
+            <div class="color" style="background: var(--orange-400)"></div>
+            <div class="color" style="background: var(--orange-200)"></div>
+            <div class="color" style="background: var(--orange-100)"></div>
+          </div>
+        </div>
+
+
+        <div data-aos="fade-right" data-aos-duration="1000">
+          <h3>Blue</h3>
+          <div class="color-grid">
+            <div class="color" style="background: var(--blue-900)"></div>
+            <div class="color" style="background: var(--blue-800)"></div>
+            <div class="color" style="background: var(--blue-700)"></div>
+            <div class="color" style="background: var(--blue-600)"></div>
+            <div class="color" style="background: var(--blue-500)"></div>
+            <div class="color" style="background: var(--blue-400)"></div>
+            <div class="color" style="background: var(--blue-200)"></div>
+            <div class="color" style="background: var(--blue-100)"></div>
+          </div>
+        </div>
+
+        <div data-aos="fade-right" data-aos-duration="1000">
+          <h3>Yellow</h3>
+          <div class="color-grid">
+            <div class="color" style="background: var(--yellow-900)"></div>
+            <div class="color" style="background: var(--yellow-800)"></div>
+            <div class="color" style="background: var(--yellow-700)"></div>
+            <div class="color" style="background: var(--yellow-600)"></div>
+            <div class="color" style="background: var(--yellow-500)"></div>
+            <div class="color" style="background: var(--yellow-400)"></div>
+            <div class="color" style="background: var(--yellow-200)"></div>
+            <div class="color" style="background: var(--yellow-100)"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <h2 id="buttons">Buttons</h2>
+
+        <div data-aos="fade-down" data-aos-duration="1000">
+          <h3>Primary Buttons</h3>
+          <button>Primary Button</button>
+          <button disabled>Disabled</button>
+          <button>Button with long text</button>
+          <button>Button &xrarr;</button>
+          <br /><br />
+          <button class="small">Primary Button</button>
+        </div>
+
+        <br /><br />
+
+        <div data-aos="fade-down" data-aos-duration="1000">
+
+          <h3>Secondary Buttons</h3>
+  
+          <button class="secondary-button">Secondary Button</button>
+          <button class="secondary-button" disabled>Disabled</button>
+          <button class="secondary-button">
+            Secondary button with long text
+          </button>
+          <button class="secondary-button">Button &xrarr;</button>
+        </div>
+
+
+
+        <br /><br />
+
+        <div data-aos="fade-down" data-aos-duration="1000">
+          <h3>Tertiary Buttons</h3>
+  
+          <button class="tertiary-button">Tertiary Button</button>
+          <button class="tertiary-button" disabled>Tertiary Button</button>
+        </div>
+
+      </section>
+      <section class="container" data-aos="zoom-in-down" data-aos-duration="1000">
+        <h2 id="forms">Forms</h2>
+
+        <form action="#">
+          <div class="flex">
+            <div class="split">
+              <p>
+                <label for="text">Text</label
+                ><input placeholder="Tim De Paepe" type="text" id="text" />
+              </p>
+              <p>
+                <label for="number">Number</label
+                ><input type="number" id="number" />
+              </p>
+            </div>
+            <p>
+              <label for="email">Email</label><input type="email" id="email" />
+            </p>
+          </div>
+          <p>
+            <label for="textarea">Textarea</label>
+            <textarea id="textarea">Default Value</textarea>
+          </p>
+          <p>
+            <label for="select">Select</label>
+            <select id="select">
+              <option value="one">One</option>
+              <option value="two">Two</option>
+            </select>
+          </p>
+        </form>
+      </section>
+      <section class="container cards">
+        <h2 id="cards">Card</h2>
+        <div class="cards-div">
+          <div class="three-columns">
+            <div class="card orange" data-aos-duration="1000" data-aos="fade-right">
+              <div class="blob">
+                <svg
+                  class="blob-icon"
+                  width="37"
+                  height="27"
+                  style="position: absolute"
+                >
+                  <path
+                    d="M35.556 2.878a2.277 2.277 0 0 0-1.95-1.87 113.746 113.746 0 0 0-30.219 0c-.989.129-1.78.886-1.95 1.869a60.032 60.032 0 0 0 0 21.245c.17.983.961 1.74 1.95 1.87a113.764 113.764 0 0 0 30.222 0 2.276 2.276 0 0 0 1.95-1.87 60.059 60.059 0 0 0-.002-21.244zM12.5 18.029V8.97a1.56 1.56 0 0 1 2.301-1.293l8.883 4.529a1.435 1.435 0 0 1 0 2.588l-8.883 4.529a1.56 1.56 0 0 1-2.301-1.294z"
+                    fill="currentColor"
+                    fill-rule="nonzero"
+                  ></path>
+                </svg>
+                <svg width="88" height="80" count="0">
+                  <path
+                    d="M43.711 0c-1.6 0-3.105.107-4.57.316-14.992 2.15-26.514 9.992-34.245 23.306C-5.26 41.11.974 61.979 18.143 72.511c14.475 8.88 35.305 10.247 50.375 2.028.06-.033.12-.064.18-.092 11.294-5.242 17.703-14.52 19.048-27.574 1.04-10.088-1.451-18.757-1.477-18.843-.02-.07-.04-.145-.055-.216-2.08-9.6-8.145-17.008-18.025-22.018-7.612-3.86-14.737-4.781-14.808-4.789a5.134 5.134 0 0 1-.179-.027C49.575.323 46.501 0 43.712 0"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+  
+              <h4>Step-by-step training videos</h4>
+              <p>Expert Training Videos for all relevant categories.</p>
+            </div>
+            <div class="card yellow" data-aos-duration="1000" data-aos="fade-up">
+              <div class="blob">
+                <svg
+                  class="blob-icon"
+                  width="37"
+                  height="27"
+                  style="position: absolute"
+                >
+                  <path
+                    d="M35.556 2.878a2.277 2.277 0 0 0-1.95-1.87 113.746 113.746 0 0 0-30.219 0c-.989.129-1.78.886-1.95 1.869a60.032 60.032 0 0 0 0 21.245c.17.983.961 1.74 1.95 1.87a113.764 113.764 0 0 0 30.222 0 2.276 2.276 0 0 0 1.95-1.87 60.059 60.059 0 0 0-.002-21.244zM12.5 18.029V8.97a1.56 1.56 0 0 1 2.301-1.293l8.883 4.529a1.435 1.435 0 0 1 0 2.588l-8.883 4.529a1.56 1.56 0 0 1-2.301-1.294z"
+                    fill="currentColor"
+                    fill-rule="nonzero"
+                  ></path>
+                </svg>
+                <svg width="88" height="80" count="0">
+                  <path
+                    d="M43.711 0c-1.6 0-3.105.107-4.57.316-14.992 2.15-26.514 9.992-34.245 23.306C-5.26 41.11.974 61.979 18.143 72.511c14.475 8.88 35.305 10.247 50.375 2.028.06-.033.12-.064.18-.092 11.294-5.242 17.703-14.52 19.048-27.574 1.04-10.088-1.451-18.757-1.477-18.843-.02-.07-.04-.145-.055-.216-2.08-9.6-8.145-17.008-18.025-22.018-7.612-3.86-14.737-4.781-14.808-4.789a5.134 5.134 0 0 1-.179-.027C49.575.323 46.501 0 43.712 0"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+  
+              <h4>Step-by-step training videos</h4>
+              <p>Expert Training Videos for all relevant categories.</p>
+            </div>
+            <div class="card blue" data-aos-duration="1000" data-aos="fade-left">
+              <div class="blob">
+                <svg
+                  class="blob-icon"
+                  width="37"
+                  height="27"
+                  style="position: absolute"
+                >
+                  <path
+                    d="M35.556 2.878a2.277 2.277 0 0 0-1.95-1.87 113.746 113.746 0 0 0-30.219 0c-.989.129-1.78.886-1.95 1.869a60.032 60.032 0 0 0 0 21.245c.17.983.961 1.74 1.95 1.87a113.764 113.764 0 0 0 30.222 0 2.276 2.276 0 0 0 1.95-1.87 60.059 60.059 0 0 0-.002-21.244zM12.5 18.029V8.97a1.56 1.56 0 0 1 2.301-1.293l8.883 4.529a1.435 1.435 0 0 1 0 2.588l-8.883 4.529a1.56 1.56 0 0 1-2.301-1.294z"
+                    fill="currentColor"
+                    fill-rule="nonzero"
+                  ></path>
+                </svg>
+                <svg width="88" height="80" count="0">
+                  <path
+                    d="M43.711 0c-1.6 0-3.105.107-4.57.316-14.992 2.15-26.514 9.992-34.245 23.306C-5.26 41.11.974 61.979 18.143 72.511c14.475 8.88 35.305 10.247 50.375 2.028.06-.033.12-.064.18-.092 11.294-5.242 17.703-14.52 19.048-27.574 1.04-10.088-1.451-18.757-1.477-18.843-.02-.07-.04-.145-.055-.216-2.08-9.6-8.145-17.008-18.025-22.018-7.612-3.86-14.737-4.781-14.808-4.789a5.134 5.134 0 0 1-.179-.027C49.575.323 46.501 0 43.712 0"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+  
+              <h4>Step-by-step training videos</h4>
+              <p>Expert Training Videos for all relevant categories.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <h2 id="layout">Layout</h2>
+
+        <h3>Split</h3>
+
+        <div class="split content">
+          <div data-aos-duration="1000" data-aos="fade-right">
+            <h4>Video Training</h4>
+            <h2>Hundreds of expert training videos</h2>
+            <p>
+              Our training experts have created a vast collection of videos for
+              you to try at home with your pup, including clicker training
+              materials and more! From basic stuff like sit and lie down, right
+              through to serious stuff like office and medical training, each
+              video features commands and instructions for you and your dog to
+              learn together. You’ll go through each trick step-by-step,
+              teaching you everything both you and your buddy need to know to
+              succeed.
+            </p>
+          </div>
+          <img src="./assets/content-1.png" data-aos-duration="1000" data-aos="fade-left" />
+        </div>
+
+        <div class="split split-reverse content">
+          <div data-aos-duration="1000" data-aos="flip-left">
+            <h4>Health benefits</h4>
+            <h2>Physical and mental workouts</h2>
+            <p>
+              Dogs love exercise! Our training exercises give your furry friend
+              the perfect excuse to blow off some steam as you run them through
+              their paces with each video. The training also helps tone your
+              puppy’s mental abilities, keeping their neural and motor systems
+              sharp and ready to roll. With the help of Pupy, you can keep your
+              dog in the best shape possible both mentally and physically.
+            </p>
+          </div>
+          <img src="./assets/content-2.png" data-aos-duration="1000" data-aos="flip-right"/>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="six-columns">
+          <div class="first-column">
+            <svg
+              width="48"
+              height="45"
+              viewBox="0 0 48 45"
+              class="styles__Logo-sc-4epfyw-3 jltfqk"
+            >
+              <path
+                d="M.055 21.54C.812 8.58 8.95-.58 22.422.03 29.576.353 35.445 4.77 37.77 11.675c.084.249.164.537.24.868l.018.08 7.356-.144c.97-.02 1.812.67 2.017 1.638l.017.091c1.492 8.903-.335 14.949-5.729 17.526l-.164.077c-3.583 1.707-7.541 1.48-11.722-.587-1.008-.498-1.433-1.743-.949-2.78.484-1.039 1.693-1.476 2.701-.978 3.086 1.526 5.747 1.706 8.149.618l.146-.068c3.185-1.461 4.541-5.007 3.86-11.097l-.028-.238-7.294.145c-.985.02-1.836-.693-2.025-1.679l-.016-.093-.045-.3c-.129-.822-.253-1.406-.357-1.713-1.777-5.275-6.19-8.598-11.701-8.848-5.849-.265-10.33 1.551-13.445 5.059-2.787 3.137-4.414 7.598-4.702 12.539-.575 9.847 4.083 18.273 10.19 18.273 5.422 0 7.96-4.715 5.68-13.003-.414-1.51-1.258-3.436-2.532-5.752-.55-1.002-.209-2.274.764-2.841.973-.567 2.208-.215 2.76.786 1.42 2.583 2.389 4.797 2.904 6.671 2.945 10.706-1.148 18.307-9.576 18.307-8.98 0-14.928-10.76-14.232-22.691z"
+                fill="#FF7154"
+                fill-rule="nonzero"
+              ></path>
+            </svg>
+            <h5>Puppy App</h5>
+            <p>
+              Pupy: Dog Training Mobile App <br />
+              © 2020 Pupy GmbH. All rights reserved.
+            </p>
+          </div>
+          <div>
+            <h5>Pupy</h5>
+            <ul>
+              <li>Home</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Company</h5>
+            <ul>
+              <li>About us</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Legal</h5>
+            <ul>
+              <li>Terms of Use</li>
+              <li>Privacy Policy</li>
+              <li>Imprint</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Social</h5>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    AOS.init();
+  </script>
+</html>

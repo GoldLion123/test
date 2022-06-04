@@ -1,0 +1,506 @@
+/**
+ * A Design System Template
+ */
+
+/**
+ * Imports
+ */
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Inter&display=swap");
+
+/**
+ * Design System Variables
+ */
+
+:root {
+  /* Define color as color */
+  --black: #000;
+  --white: #fff;
+
+  --orange-900: #ff7154;
+  --orange-800: #ff8067;
+  --orange-700: #ff907a;
+  --orange-600: #ffa08d;
+  --orange-500: #ffb0a0;
+  --orange-400: #ffbfb3;
+  --orange-300: #ffcfc6;
+  --orange-200: #ffdfd9;
+  --orange-100: #ffefec;
+  --blue-900: #3a3e5c;
+  --blue-800: #4f536e;
+  --blue-700: #656880;
+  --blue-600: #7b7e92;
+  --blue-500: #9193a4;
+  --blue-400: #a7a9b6;
+  --blue-300: #bdbec8;
+  --blue-200: #d3d4da;
+  --blue-100: #e9e9ec;
+  --yellow-900: #ffbd2d;
+  --yellow-800: #ffc444;
+  --yellow-700: #ffcb5b;
+  --yellow-600: #ffd373;
+  --yellow-500: #ffda8a;
+  --yellow-400: #ffe1a1;
+  --yellow-300: #ffe9b9;
+  --yellow-200: #fff0d0;
+  --yellow-100: #fff7e7;
+
+  --gray: rgb(116, 116, 118);
+
+  /* Color intentions */
+  --textColor: var(--black);
+  --background: var(--white);
+
+  /* Typography */
+  --baseFontSize: 100%;
+  --bodyFont: "Inter", sans-serif;
+  --headingFont: "Cabin", sans-serif;
+  --baseLineHeight: 1.625;
+  --h1: 3.5rem;
+  --h2: 2.25rem;
+  --h3: 1.5rem;
+  --h4: 1.375rem;
+  --h5: 1.125rem;
+  --smallText: 0.875rem;
+
+  /* Radius */
+  --buttonBorderRadius: 0.5rem;
+  --inputBorderRadius: 0.5rem;
+  --cardBorderRadius: 1.125rem;
+
+  /* Styles */
+  --line: 1px solid var(--black);
+  --lineOrange: 1px solid var(--orange-900);
+  --lineGray: 1.5px solid rgba(138, 138, 138, 0.5);
+
+  /* Layout */
+  --containerWidth: 85vw;
+  --containerMaxWidth: 75rem;
+  --containerPaddingTB: 5rem;
+  --containerPaddingLR: 0;
+  --gridColumnGap: 1.5rem;
+  --navigationHeight: 5.25rem;
+
+  /* Elevation */
+  --level-1: rgb(217 92 66) 0 2px 0;
+  --level-2: rgb(63 63 63 / 12%) 0px 1px 2px 0px;
+  --level-3: 0 10px 15px -3px rgba(0, 24, 88, 0.1),
+    0 4px 6px -2px rgba(0, 24, 88, 0.05);
+  --level-4: 0 20px 25px -5px rgba(0, 24, 88, 0.1),
+    0 10px 10px -5px rgba(0, 24, 88, 0.04);
+}
+
+/**
+ * General
+ */
+
+html {
+  font-size: var(--baseFontSize);
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+
+body {
+  background: var(--background);
+  font-family: var(--bodyFont);
+  color: var(--textColor);
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  display: block;
+  padding-top: var(--navigationHeight);
+}
+
+hr {
+  border: none;
+  border-top: var(--line);
+  margin-top: 3rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+/*
+ * Typography
+ */
+a {
+  color: var(--orange-900);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: var(--headingFont);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: var(--baseLineHeight);
+  color: #d3d4da;
+}
+
+/*
+ * Buttons
+ */
+button {
+  --buttonTextColor: var(--white);
+  --buttonColor: var(--orange-900);
+  --buttonBorder: none;
+
+  outline: none;
+  cursor: pointer;
+  border: var(--buttonBorder);
+  color: var(--buttonTextColor);
+  background: var(--buttonColor);
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: var(--headingFont);
+  height: 2.5rem;
+  padding: 0 1.5rem;
+  border-radius: var(--buttonBorderRadius);
+  box-shadow: var(--level-1);
+  transition: opacity 0.1s ease-out;
+
+  transition: all 0.1s;
+}
+
+button:not(:disabled):hover {
+  transform: scale(1.01);
+}
+
+button[disabled] {
+  opacity: 0.4;
+  cursor: initial;
+}
+
+button.small {
+  font-size: var(--smallText);
+  height: 2rem;
+}
+
+button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+button.secondary-button {
+  --buttonTextColor: var(--orange-900);
+  --buttonColor: var(--white);
+  --buttonBorder: 1px solid var(--orange-900);
+}
+
+button.secondary-button:hover:not(:disabled) {
+  --buttonColor: var(--orange-100);
+}
+
+button.tertiary-button {
+  --buttonBorder: none;
+  --buttonTextColor: var(--orange-900);
+  --buttonColor: transparent;
+  box-shadow: none;
+}
+
+/**
+ * Colors
+ */
+
+.color {
+  height: 6.25rem;
+  transition: all 0.3s;
+}
+
+.color:hover {
+  transform: scale(1.1);
+}
+
+.color-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 40em;
+  grid-gap: 1.25rem;
+  row-gap: 1.25rem;
+}
+
+/*
+ * Forms
+ */
+label {
+  display: block;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+  font-family: var(--bodyFont);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: var(--black);
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: var(--level-2);
+  border: var(--lineGray);
+  padding: 0 1.25rem;
+  border-radius: var(--inputBorderRadius);
+  background: var(--white);
+  height: 3rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border: var(--lineOrange);
+}
+
+textarea {
+  padding: 0.875rem 1.25rem;
+  min-height: 4rem;
+}
+
+/*
+ * Layout
+ */
+.container {
+  width: var(--containerWidth);
+  max-width: var(--containerMaxWidth);
+  padding: var(--containerPaddingTB) var(--containerPaddingLR);
+  margin: 0 auto;
+}
+
+.visual-type-scale h1, h2, h3, h4, h5, h6 {
+  -webkit-font-smoothing: antialiased;
+  font-family: Apercu, sans-serif;
+  text-rendering: optimizelegibility;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: #413D45;
+}
+
+.split {
+  display: grid;
+  gap: var(--gridColumnGap);
+  grid-template-columns: 1fr 1fr;
+}
+
+.split-reverse > *:last-child {
+  order: -1;
+}
+
+.three-columns {
+  display: grid;
+  gap: var(--gridColumnGap);
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.six-columns {
+  display: grid;
+  gap: var(--gridColumnGap);
+  grid-template-columns: repeat(6, 1fr);
+}
+
+/*
+ * Header
+ */
+header {
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  right: 0;
+  box-shadow: rgb(0 0 0 / 7%) 0px 5px 10px;
+}
+
+header .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white);
+  padding: 0;
+  height: var(--navigationHeight);
+}
+
+header .navigation .logo {
+  width: 120px;
+  height: auto;
+  margin: 0;
+  line-height: 0.5;
+}
+
+header .navigation nav a {
+  font-family: var(--headingFont);
+  color: var(--black);
+  font-weight: 600;
+  transition: 0.1s;
+}
+
+header .navigation nav a:hover {
+  color: var(--orange-900);
+}
+
+header .navigation nav a + a {
+  margin-left: 2.5rem;
+}
+
+/*
+ * Footer
+ */
+
+ footer {
+  background-color: rgb(75, 76, 77);
+ }
+
+footer .first-column {
+  grid-column: span 2 / auto;
+}
+
+footer .six-columns div:first-child {
+  grid-column: span 2 / auto;
+}
+
+footer .six-columns div:first-child p {
+  line-height: var(--footerLineHeight);
+  font-weight: 500;
+  font-size: var(--smallText);
+}
+
+footer .six-columns div:first-child h5 {
+  margin-top: 1.33rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+footer .six-columns div h5 {
+  margin: 0;
+  color: #d3d4da !important;
+}
+.six-columns {
+  color: #d3d4da !important;
+}
+
+footer .six-columns div ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+footer .six-columns div li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+/* 
+ * Content
+ */
+.split.content {
+  align-items: center;
+}
+
+.split.content h4 {
+  color: var(--orange-900);
+  margin: 0;
+}
+
+.split.content h2 {
+  margin: 0.75rem 0 0 0;
+}
+
+/*
+ * Cards
+ */
+
+.cards {
+  color: rgb(75, 76, 77);
+}
+
+.cards-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  --cardBackgroundColorHover: var(--white);
+  --cardIconBackground: var(--white);
+
+  cursor: pointer;
+  transition: all 0.1s ease 0s;
+  text-align: center;
+  padding: 2rem 1rem 2.5rem 1rem;
+  border-radius: var(--cardBorderRadius);
+}
+
+.card:hover {
+  background-color: var(--cardBackgroundColorHover);
+}
+
+.card .blob {
+  color: var(--cardIconBackground);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .blob-icon {
+  color: var(--white);
+}
+
+.card h4 {
+  margin: 20px auto 12px;
+  font-weight: 500;
+}
+
+.card.blue {
+  --cardIconBackground: var(--blue-900);
+  --cardBackgroundColorHover: var(--blue-100);
+}
+.card.yellow {
+  --cardIconBackground: var(--yellow-900);
+  --cardBackgroundColorHover: var(--yellow-100);
+}
+.card.orange {
+  --cardIconBackground: var(--orange-900);
+  --cardBackgroundColorHover: var(--orange-100);
+}
+
+/**
+ * Media Queries
+ */
+
+@media only screen and (min-width: 31.25rem) {
+  .color-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
